@@ -10,24 +10,26 @@ public class ArrayOfSquares {
 
         int left=0,right = ans.length-1;
 //
-        int k=0;
+        int k= ans.length-1;
         while(left<=right)
         {
             if(arr[left]>arr[right])
             {
-                ans[k++] =arr[left];
+                ans[k--] =arr[left];
                 left++;
 
             }else{
-                ans[k++] =arr[right];
+                ans[k--] =arr[right];
                 right--;
 
             }
         }
-
-        for (int j : ans)
+        for(int m : ans)
         {
-            System.out.print(j+ " ");
+            System.out.print
+                    (m+" ");
         }
+
+
     }
 }
