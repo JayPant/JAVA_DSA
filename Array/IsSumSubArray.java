@@ -11,11 +11,11 @@ public class IsSumSubArray {
     }
     static boolean isPartition(int[] arr)
     {
-        int check =0;
+//        int check =0;
         for (int j : arr) {
-            check = 0;
-            check = arr[arr.length - 1] - j;
-            if (check == j) {
+//            check = 0;
+//            check = ;
+            if ((arr[arr.length - 1] - j) == j) {
                 return true;
             }
         }
