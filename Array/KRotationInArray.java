@@ -1,23 +1,35 @@
 import java.util.Scanner;
 
 public class KRotationInArray {
-    static void rotateArray(int[] arr)
+
+    static void swap(int[] arr, int l ,int r)
     {
-//        int temp = arr[0];
-//        for(int i=0;i<arr.length-1; i++)
-//        {
-//            arr[i]=arr[i+1];
-//        }
-//        arr[arr.length-1]= temp;
-        int n = arr.length-1;
-        int i = n;
-        int temp = arr[n];
-         while(i>0)
-         {
-             arr[i]=arr[i-1];
-             i--;
-         }
-         arr[i]= temp;
+        int temp = arr[l];
+        arr[l]=arr[r];
+        arr[r]=temp;
+    }
+
+    static void reverse(int[] arr, int l , int r)
+    {
+        int left =l, right =r;
+        while(left<right)
+        {
+            swap(arr, left, right);
+            left++;
+            right--;
+        }
+    
+    }
+    static void rotateArray(int[] arr, int k)
+    {
+
+        int n = arr.length;
+        k = k% n;
+
+        reverse(arr, 0, n-k-1);
+        reverse(arr, n-k, n-1);
+        reverse(arr, 0, n-1);
+
 
     }
 
@@ -26,15 +38,10 @@ public class KRotationInArray {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the value of k: ");
         int k = s.nextInt();
-        k = k % arr.length;
-
-        while(k>0) {
-            rotateArray(arr);
-            k--;
-        }
-        for(int i:arr)
+        rotateArray(arr,k);
+        for(int i : arr)
         {
-            System.out.print(i+" ");
+            System.out.println(i+" ");
         }
     }
 }
