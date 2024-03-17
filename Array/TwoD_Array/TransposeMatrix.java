@@ -3,6 +3,7 @@ package TwoD_Array;
 import java.util.Scanner;
 
 public class TransposeMatrix {
+
     static void printArray(int[][] arr)
     {
         for (int[] i : arr) {
@@ -26,6 +27,19 @@ public class TransposeMatrix {
         printArray(transpose);
     }
 
+    static void inplaceTranspose(int[][] arr, int r, int c)
+    {
+        for(int i=0;i<r;i++)
+        {
+            for (int j=i;j<c;j++)
+            {
+                int temp = arr[i][j];
+                arr[i][j]=arr[j][i];
+                arr[j][i]=temp;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the value of rows you want to enter: ");
@@ -46,6 +60,8 @@ public class TransposeMatrix {
         printArray(arr);
 
         System.out.println("Matrix after transpose: ");
-        matrixTranspose(arr,r,c);
+        inplaceTranspose(arr,r,c);
+        printArray(arr);
+
     }
 }
