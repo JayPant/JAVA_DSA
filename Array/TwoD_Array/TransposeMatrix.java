@@ -12,9 +12,9 @@ public class TransposeMatrix {
             System.out.println();
         }
     }
-    static void matrixtranspose(int[][] arr, int r, int c)
+    static void matrixTranspose(int[][] arr, int r, int c)
     {
-        int[][] transpose= new int[r][c];
+        int[][] transpose= new int[c][r];
         for(int i=0;i<r;i++)
         {
             for (int j=0;j<c;j++)
@@ -46,6 +46,6 @@ public class TransposeMatrix {
         printArray(arr);
 
         System.out.println("Matrix after transpose: ");
-        matrixtranspose(arr,r,c);
+        matrixTranspose(arr,r,c);
     }
 }
