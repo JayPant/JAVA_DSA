@@ -21,7 +21,7 @@ public class SpiralMatrix {
         while(elements < r*c)
         {
 //            topRow -> lc to rc
-            for(int j= leftCol; j<=rightCol;j++)
+            for(int j= leftCol; j<=rightCol && elements < r*c ;j++)
             {
                 System.out.print(arr[topRow][j]+" ");
                 elements++;
@@ -29,7 +29,7 @@ public class SpiralMatrix {
             topRow++;
 
 //            rightCol -> tR to bR
-             for (int i = topRow; i<=bottomRow;i++)
+             for (int i = topRow; i<=bottomRow && elements < r*c ;i++)
              {
                  System.out.print(arr[i][rightCol]+" ");
                  elements++;
@@ -37,7 +37,7 @@ public class SpiralMatrix {
              rightCol--;
 
 //             bottomRow -> rC to lC
-            for (int j = rightCol; j >= leftCol; j--) {
+            for (int j = rightCol; j >= leftCol && elements < r*c ; j--) {
                 System.out.print(arr[bottomRow][j]+" ");
                 elements++;
             }
@@ -45,7 +45,7 @@ public class SpiralMatrix {
 
 
 //            leftCol -> bR to tR
-            for (int i = bottomRow; i >= topRow; i--) {
+            for (int i = bottomRow; i >= topRow && elements < r*c ; i--) {
                 System.out.print(arr[i][leftCol]+" ");
                 elements++;
             }
