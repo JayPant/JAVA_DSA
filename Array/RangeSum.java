@@ -33,8 +33,10 @@ public class RangeSum {
 
         System.out.println("Enter the number of queries: ");
         int query = s.nextInt();
+
         int ans;
-         int[] pf_s = prefixSum(arr);
+        int[] pf_s = prefixSum(arr);
+
         while(query-- >0)
         {
             ans =0;

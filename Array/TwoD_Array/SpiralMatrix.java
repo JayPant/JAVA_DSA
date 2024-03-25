@@ -18,7 +18,7 @@ public class SpiralMatrix {
     {
         int topRow= 0, bottomRow= r-1;
         int leftCol=0, rightCol= c-1, elements=0;
-        while(elements < r*c)
+        while(elements <= r*c)
         {
 //            topRow -> lc to rc
             for(int j= leftCol; j<=rightCol && elements < r*c ;j++)
