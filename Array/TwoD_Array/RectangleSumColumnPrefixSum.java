@@ -32,22 +32,22 @@ public class RectangleSumColumnPrefixSum {
         int ans=0;
 
         sum= arr[l2][r2];
-        if(l1>0)
+        if(l1>=1)
         {
             up= arr[l1-1][r2];
 
         }
-        if(r1>0)
+        if(r1>=1)
         {
             left= arr[l2][r1-1];
         }
 
-        if(l1>0 && r1 >0)
+        if(l1>=1 && r1 >=1)
         {
             leftup= arr[l1-1][r1-1];
         }
 
-        ans = sum-up-left-leftup;
+        ans = sum-up-left+leftup;
 
 
         System.out.println("Sum is: "+ ans);
