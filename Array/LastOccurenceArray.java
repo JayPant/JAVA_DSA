@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class LastOccurenceArray {
      static int lastOccurrence(int[] arr, int x)
      {
-         int lastIndex =-1;
-         for(int i = 0; i < arr.length; i++)
+        //  int lastIndex =-1;
+         for(int i = arr.length-1; i >=0; i--)
          {
              if(arr[i]==x)
              {
-                 lastIndex = i;
+                 return i;
              }
          }
-         return lastIndex;
+         return -1;
      }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);

@@ -5,13 +5,23 @@ public class UniqueElement {
     static  int returnUnique(int[] arr)
     {
         int unique=-1;
-        for (int j : arr) {
-            for (int k : arr) {
-                if (j == k) {
-                    break;
-                } else {
-                    unique = j;
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j =i+1;j< arr.length; j++)
+            {
+                if(arr[i]==arr[j])
+                {
+                    arr[i]=-1;
+                    arr[j]=-1;
                 }
+            }
+        }
+
+        for(int i : arr)
+        {
+            if(i>0)
+            {
+                unique =i;
             }
         }
         return unique;
