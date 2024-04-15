@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Factorial {
     static int findFactorial(int n)
     {
@@ -11,6 +13,10 @@ public class Factorial {
 
 
     public static void main(String[] args) {
-        System.out.println(findFactorial(5));
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int n = s.nextInt();
+        s.close();
+        System.out.println(findFactorial(n));
     }
 }

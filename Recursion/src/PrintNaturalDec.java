@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PrintNaturalDec {
     static void printDecreasing(int n)
     {
@@ -11,7 +13,12 @@ public class PrintNaturalDec {
         printDecreasing(n-1);
     }
 
-    public static void main(String[] args) {
-        printDecreasing(10);
+    public static void main(String[] args)
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter number: ");
+        int n =s.nextInt();
+        s.close();
+        printDecreasing(n);
     }
 }

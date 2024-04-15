@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PrintNatural {
     static void printN(int n)
     {
@@ -12,7 +14,10 @@ public class PrintNatural {
     }
 
     public static void main(String[] args) {
-        int n=5;
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter the number: ");
+        int n= s.nextInt();
         printN(n);
     }
 }
