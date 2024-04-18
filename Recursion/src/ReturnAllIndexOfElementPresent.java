@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ReturnAllIndexOfElementPresent {
     static void checkElement(int[] arr, int idx, int x) {
+
         if (idx == arr.length)
             return ;
 
