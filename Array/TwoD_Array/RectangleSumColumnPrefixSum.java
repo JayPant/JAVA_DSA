@@ -76,7 +76,7 @@ public class RectangleSumColumnPrefixSum {
         System.out.println("Enter the value of l2 and r2: ");
         int l2 = s.nextInt();
         int r2 = s.nextInt();
-
+        s.close();
         rectangleSum(arr, l1,r1,l2,r2);
 
 

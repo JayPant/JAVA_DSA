@@ -61,6 +61,7 @@ public class Matrix90degRotate {
 
         System.out.println("Enter the value of columns you want to enter: ");
         int c = s.nextInt();
+        
 
         if(r!= c)
         {
@@ -74,11 +75,14 @@ public class Matrix90degRotate {
                 arr[i][j] = s.nextInt();
             }
         }
+        s.close();
+
 
         System.out.println("Array before rotation: ");
         printArray(arr);
         rotate90deg(arr,r,c);
         System.out.println("Array after rotation: ");
         printArray(arr);
+
     }
 }

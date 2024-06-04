@@ -62,6 +62,8 @@ public class TransposeMatrix {
         System.out.println("Matrix after transpose: ");
         inplaceTranspose(arr,r,c);
         printArray(arr);
+        s.close();
+
 
     }
 }

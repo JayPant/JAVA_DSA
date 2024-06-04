@@ -61,6 +61,7 @@ public class AdditionMatrix {
         }
 
         add(arr1,r,c,arr2,r1,c1);
+        s.close();
 
     }
 }

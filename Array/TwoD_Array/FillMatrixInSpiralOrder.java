@@ -60,6 +60,7 @@ public class FillMatrixInSpiralOrder {
 
         System.out.println("Matrix after filling in spiral order: ");
         printArray(mat);
+        s.close();
 
 
     }

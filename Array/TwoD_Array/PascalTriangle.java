@@ -29,6 +29,7 @@ public class PascalTriangle {
                  pascal[i][j]= pascal[i-1][j-1]+pascal[i-1][j];
              }
          }
+        s.close();
 
          printArray(pascal);
 

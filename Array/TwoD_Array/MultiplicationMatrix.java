@@ -69,6 +69,7 @@ public class MultiplicationMatrix {
             }
         }
 
+        s.close();
         MatrixMultiplication(arr1,r,c,arr2,r1,c1);
 
     }

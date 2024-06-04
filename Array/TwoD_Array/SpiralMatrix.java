@@ -75,5 +75,6 @@ public class SpiralMatrix {
 
         System.out.println("Spiral order of matrix is: ");
         printSpiralorder(arr,r,c);
+        s.close();
     }
 }

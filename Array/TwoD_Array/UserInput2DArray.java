@@ -30,5 +30,7 @@ public class UserInput2DArray {
         }
 
         printArray(arr);
+        s.close();
+
     }
 }

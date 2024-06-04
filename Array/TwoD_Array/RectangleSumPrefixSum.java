@@ -54,6 +54,7 @@ public class RectangleSumPrefixSum {
         int l2 = s.nextInt();
         int r2 = s.nextInt();
 
+        s.close();
         rectangleSum(arr, l1,r1,l2,r2);
 
 
