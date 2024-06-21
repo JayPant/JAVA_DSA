@@ -27,10 +27,10 @@ public class UpdateithBit {
             int b = s.nextInt();
 
             if(b==0)
-            {System.out.println(setIth(n, i));}
+            {System.out.println(ClearIth(n, i));}
 
             if(b==1)
-            {System.out.println(ClearIth(n, i));}
+            {System.out.println(setIth(n, i));}
             s.close();
     }
 }
