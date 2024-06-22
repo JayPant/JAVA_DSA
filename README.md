@@ -11,48 +11,36 @@ Welcome to the Java Data Structures and Algorithms repository! This repository a
 
 ## 📁 Data Structures
 
-### 1. Array
+### 1. Array -  Implementation of basic operations on arrays such as insertion, deletion, and searching.
 
-- **Description:** Implementation of basic operations on arrays such as insertion, deletion, and searching.
-- **File:** [Array.java](Array.java)
 
-### 2. LinkedList
+### 2. LinkedList -  Implementation of a singly linked list with operations like insertion, deletion, and traversal.
 
-- **Description:** Implementation of a singly linked list with operations like insertion, deletion, and traversal.
-- **File:** [LinkedList.java](LinkedList.java)
 
-### 3. Stack
+### 3. Stack -  Implementation of a stack using arrays with push, pop, and isEmpty operations.
 
-- **Description:** Implementation of a stack using arrays with push, pop, and isEmpty operations.
-- **File:** [Stack.java](Stack.java)
 
-### 4. Queue
+### 4. Queue -  Implementation of a queue using arrays with enqueue, dequeue, and isEmpty operations.
 
-- **Description:** Implementation of a queue using arrays with enqueue, dequeue, and isEmpty operations.
-- **File:** [Queue.java](Queue.java)
 
-### 5. BinarySearchTree
+### 5. BinarySearchTree -   Implementation of a binary search tree with insertion, deletion, and traversal operations.
 
-- **Description:** Implementation of a binary search tree with insertion, deletion, and traversal operations.
-- **File:** [BinarySearchTree.java](BinarySearchTree.java)
 
-### 6. Graph
+### 6. Graph -  Implementation of a graph using adjacency list representation with BFS and DFS traversal algorithms.
 
-- **Description:** Implementation of a graph using adjacency list representation with BFS and DFS traversal algorithms.
-- **File:** [Graph.java](Graph.java)
 
 ## 📚 Algorithms
 
 ### 1. Sorting Algorithms
 
-- **Bubble Sort:** [BubbleSort.java](BubbleSort.java)
-- **Selection Sort:** [SelectionSort.java](SelectionSort.java)
-- **Insertion Sort:** [InsertionSort.java](InsertionSort.java)
+- **Bubble Sort:** 
+- **Selection Sort:** 
+- **Insertion Sort:** 
 
 ### 2. Searching Algorithms
 
-- **Linear Search:** [LinearSearch.java](LinearSearch.java)
-- **Binary Search:** [BinarySearch.java](BinarySearch.java)
+- **Linear Search:** [LinearSearch.java]
+- **Binary Search:** [BinarySearch.java]
 
 ## 🧩 Usage
 
