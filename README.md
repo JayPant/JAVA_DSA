@@ -11,22 +11,28 @@ Welcome to the Java Data Structures and Algorithms repository! This repository a
 
 ## 📁 Data Structures
 
-### 1. Array -  Implementation of basic operations on arrays such as insertion, deletion, and searching.
+### 1. Array 
+-  Implementation of basic operations on arrays such as insertion, deletion, and searching.
 
 
-### 2. LinkedList -  Implementation of a singly linked list with operations like insertion, deletion, and traversal.
+### 2. LinkedList 
+-  Implementation of a singly linked list with operations like insertion, deletion, and traversal.
 
 
-### 3. Stack -  Implementation of a stack using arrays with push, pop, and isEmpty operations.
+### 3. Stack 
+-  Implementation of a stack using arrays with push, pop, and isEmpty operations.
 
 
-### 4. Queue -  Implementation of a queue using arrays with enqueue, dequeue, and isEmpty operations.
+### 4. Queue 
+-  Implementation of a queue using arrays with enqueue, dequeue, and isEmpty operations.
 
 
-### 5. BinarySearchTree -   Implementation of a binary search tree with insertion, deletion, and traversal operations.
+### 5. BinarySearchTree 
+-   Implementation of a binary search tree with insertion, deletion, and traversal operations.
 
 
-### 6. Graph -  Implementation of a graph using adjacency list representation with BFS and DFS traversal algorithms.
+### 6. Graph 
+-  Implementation of a graph using adjacency list representation with BFS and DFS traversal algorithms.
 
 
 ## 📚 Algorithms
