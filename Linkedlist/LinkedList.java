@@ -21,16 +21,36 @@ public class LinkedList {
         }
         // step 2 :- Assign head to newNode.next;
         newNode.next = head;
+        // step 3:- update head
         head = newNode;
     }
 
+    public void addMiddle(int index, int data){
+        Node newNode = new Node(data);
+        if(index==0){
+            addFirst(data);
+        }
+        Node temp = head;
+        int i=0;
+        while(i<index-1){
+            temp=temp.next;
+            i++;
+        }
+
+        newNode.next= temp.next;
+        temp.next=newNode;
+    }
+
     public void addLast(int data) {
+        // step 1 :- create new node
         Node newNode = new Node(data);
         if (head == null) {
             head = tail = newNode;
             return;
         }
+        // step 2 :- Assign tail.next to newNode;
         tail.next = newNode;
+        // step 3:- update tail
         tail = newNode;
     }
 
@@ -55,9 +75,11 @@ public class LinkedList {
         ll.printList();
         ll.addFirst(1);
         ll.printList();
-        ll.addLast(3);
-        ll.printList();
         ll.addLast(4);
+        ll.printList();
+        ll.addLast(5);
+        ll.printList();
+        ll.addMiddle(2, 3);
         ll.printList();
 
     }
