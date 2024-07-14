@@ -80,7 +80,7 @@ public class LinkedList {
     }
 
     // remove last
-    public int removeLast() {
+    public static int removeLast() {
         if (size == 0) {
             System.out.println("Linked List is empty");
             return Integer.MIN_VALUE;
@@ -91,11 +91,10 @@ public class LinkedList {
             return value;
         }
 
-        int index = 0;
+        // int index = 0;
         Node prev = head;
-        while (index < size - 2) {
+        while (prev.next.next!=null) {
             prev = prev.next;
-            index++;
         }
 
         int value = prev.next.val;
@@ -103,8 +102,35 @@ public class LinkedList {
         tail = prev;
         size--;
         return value;
+    }
+
+    public static int removeMiddle(int index) {
+        if (size == 0) {
+            System.out.println("Linked List is empty");
+            return Integer.MIN_VALUE;
+        } else if (size == 1) {
+            int value = head.val;
+            head = tail = null;
+            size = 0;
+            return value;
+        }
+
+        int i=0;
+        Node prev = head;
+        while(i<index-1){
+            prev = prev.next;
+            i++;
+        }
+
+        int value = prev.next.val;
+        prev.next= prev.next.next;
+        size--;
+
+        return value;
 
     }
+
+    
 
     public void printList() {
 
@@ -133,11 +159,11 @@ public class LinkedList {
         ll.printList();
         ll.addMiddle(2, 3);
         ll.printList();
-        ll.removeFirst();
+        System.out.println(LinkedList.size);
+        removeMiddle(2);
         ll.printList();
-        ll.removeLast();
-        ll.printList();
-        System.out.println(ll.size);
+        System.out.println(LinkedList.size);
+
 
     }
 }
