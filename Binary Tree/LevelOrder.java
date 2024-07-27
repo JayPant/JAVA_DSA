@@ -1,4 +1,6 @@
-public class Inorder {
+import java.util.Queue;
+import java.util.LinkedList;
+public class LevelOrder {
     public static class Node{
         int data;
         Node left;
@@ -26,15 +28,37 @@ public class Inorder {
              return newNode;
         }
 
-        public static void inorder(Node root){
+        public static void levelorder(Node root){
             if(root == null ) {
                 // System.out.print(-1+" ");
                 return;
             };
 
-            inorder(root.left);
-            System.out.print(root.data+ " ");
-            inorder(root.right);
+            Queue<Node> q = new LinkedList<>();
+            q.add(root);
+            q.add(null);
+
+            while(!q.isEmpty()){
+                Node currNode = q.remove();
+                if(currNode == null){
+                    System.out.println();
+                    if(q.isEmpty()){
+                        break;
+                    }else{
+                        q.add(null);
+                    }
+                }else{
+                    System.out.print(currNode.data+ " ");
+                    if(currNode.left!=null){
+                        q.add(currNode.left);
+                    }
+
+                    if(currNode.right!=null){
+                        q.add(currNode.right);
+                    }
+                }
+            }
+
 
         }
     }
@@ -44,6 +68,6 @@ public class Inorder {
 
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
-        tree.inorder(root);
+        tree.levelorder(root);
     }
 }
