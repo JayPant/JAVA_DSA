@@ -39,7 +39,7 @@ public class LevelOrder {
             q.add(null);
 
             while(!q.isEmpty()){
-                Node currNode = q.remove();
+                Node currNode = q.remove(); 
                 if(currNode == null){
                     System.out.println();
                     if(q.isEmpty()){
